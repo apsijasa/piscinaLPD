@@ -125,6 +125,8 @@ body {
 .welcome-video{
   display: flex;
   padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .texto_video{
   width: 100%;
