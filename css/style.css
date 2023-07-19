@@ -175,7 +175,7 @@ header {
   width: 100%;
   align-items: center;
 }
-/* seccion dos de notivias*/
+/* seccion dos de noticias*/
 .vid_ext{
   width: 100%;
   height: 400px;
@@ -245,6 +245,9 @@ header {
 }
 
 /*talleres*/
+.taller{
+  display: flex;
+}
 /*inscripciones*/
 /*noticias*/
 /*nosotros*/
@@ -288,7 +291,7 @@ header {
 .cont_form .rigth{
   float: right;
   width: 50%;
-  height: 400px;
+  height: 100px;
   box-sizing: border-box;
 }
 .formbox{
