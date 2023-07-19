@@ -175,7 +175,7 @@ header {
   width: 100%;
   align-items: center;
 }
-/* seccion dos de noticias*/
+/* seccion videos actividades*/
 .vid_ext{
   width: 100%;
   height: 400px;
@@ -190,14 +190,6 @@ header {
   display: flex;
   height: 400px;
   align-items: center;
-
-}
-.img_ext{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 /* aca comienza el footer*/
 .footer{
