@@ -43,57 +43,32 @@
 </header>
 
 <body>
-  <div class="accordion" id="accordionPanelsStayOpenExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          CORPORACION DEPORTES LO PRADO
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionPanelsStayOpenExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          MISIÓN Y VISIÓN 
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionPanelsStayOpenExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          HISTORIA
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionPanelsStayOpenExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-          DOCUMENTOS <!--SE ADJUNTAN LINKS DE REGLAMENTO, PROTOCOLOS, OTROS -->
-        </button>
-      </h2>
-      <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-parent="#accordionPanelsStayOpenExample">
-        <div class="accordion-body">
-          <strong>This is the fourth item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+  <div class="accordion">
+    <div class="contentBx">
+      <div class="label">List One</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium itaque tempora earum harum temporibus quibusdam illo, similique maiores quas magnam, et quidem, velit saepe doloremque adipisci optio voluptatibus nemo! Eveniet sint laboriosam aliquam ut, ratione nam quos excepturi quis sapiente, eius nisi illo saepe consectetur reiciendis libero reprehenderit quasi.</p>
       </div>
     </div>
   </div>
   
+  <div class="accordion">
+    <div class="contentBx">
+      <div class="label">List Two</div>
+      <div class="content">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium itaque tempora earum harum temporibus quibusdam illo, similique maiores quas magnam, et quidem, velit saepe doloremque adipisci optio voluptatibus nemo! Eveniet sint laboriosam aliquam ut, ratione nam quos excepturi quis sapiente, eius nisi illo saepe consectetur reiciendis libero reprehenderit quasi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="contentBx">
+      <div class="label">List Three</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium itaque tempora earum harum temporibus quibusdam illo, similique maiores quas magnam, et quidem, velit saepe doloremque adipisci optio voluptatibus nemo! Eveniet sint laboriosam aliquam ut, ratione nam quos excepturi quis sapiente, eius nisi illo saepe consectetur reiciendis libero reprehenderit quasi.</p>
+      </div>
+    </div>
+  </div>
   <!--crear discurso propio de piscina con su misión y visión, discurso del alcalde va directamente hacia pagina
 corporación-->
 <footer class="footer"> <!--revisar como hacer para quedar pegado al final-->
@@ -136,7 +111,16 @@ corporación-->
     </div>
   </div>
 </footer>
+<script>
+  const accordion = document.getElementsByClassName
+  ('contentBx');
 
+  for (i = 0; i<accordion.length; i++){
+    accordion[i].addEventListener('click', function(){
+      this.clastList.toggle('active')
+    })
+  }
+</script>
 </body>
 
 </html>
