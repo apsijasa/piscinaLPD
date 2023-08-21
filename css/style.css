@@ -40,7 +40,7 @@ body {
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #E5E8E8;
   }
-  /* .dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -56,7 +56,7 @@ body {
   }
   .dropdown:hover .dropdown-content {
     display: block;
-  } */
+  }
   .column {
     float: left;
     width: 33.33%;
