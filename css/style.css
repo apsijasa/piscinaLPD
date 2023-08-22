@@ -139,56 +139,32 @@ section {
 .card-title {
   font-size: 20px;
 }
-/* aca comienza el footer*/
-.footer {
-  padding: 20px;
-  background-color: #1A5276;
-  color: white;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer-links {
-  width: 25%;
-  padding: 0 15px;
-  margin-bottom: 25px;
-}
-.footer-links h4 {
-  border-bottom: 2px solid #00c3ff;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
-  font-weight: 500;
-  display: inline-block;
-}
-.footer-links ul li a {
-  text-decoration: none;
-  color: #E5E7E9;
-  display: block;
-  margin-bottom: 15px;
-}
-.footer-links ul li a:hover {
-  color: #ffffff;
-  padding-left: 6px;
-}
-.rrss-link a {
-  display: inline-block;
-  min-height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all .5s ease;
-}
+
 /*talleres*/
+.sectionCard
+{
+  padding: 20px;
+  display: flex;
+
+}
+
 .taller {
   display: flex;
+  gap: 10px;
 }
+
+.card-body
+{
+  padding: 10px;
+
+}
+.col-md-4
+{
+  
+}
+
 /*inscripciones online*/
-.container
+.containerF
 {
   padding: 40px;
   border-radius: 20px;
@@ -213,8 +189,9 @@ section {
   letter-spacing: 0.1em;
 }
 
-
 /*noticias*/
+
+
 
 /*nosotros*/
 .accordion {
@@ -231,9 +208,6 @@ section {
   color: #fff;
   cursor: pointer;
 }
-
-
-
 .accordion .contentBx .label::before {
   content: '+';
   position: absolute;
@@ -257,6 +231,7 @@ section {
   height: 150px;
   padding: 10px;
 }
+
 /*formulario contacto*/
 .formulario {
   padding: 20px;
@@ -275,9 +250,6 @@ section {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 36px;
 }
-
-
-
 .cont_form {
   width: 50%;
   height: 800px;
@@ -286,9 +258,6 @@ section {
   border: 2px solid #fff;
   box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
 }
-
-
-
 .cont_form .left {
   float: left;
   width: 50%;
@@ -345,3 +314,47 @@ section {
   font-size: 12px;
 }
 
+/* aca comienza el footer*/
+.footer {
+  padding: 20px;
+  background-color: #1A5276;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 25px;
+}
+.footer-links h4 {
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  display: inline-block;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: #E5E7E9;
+  display: block;
+  margin-bottom: 15px;
+}
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+.rrss-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all .5s ease;
+}
