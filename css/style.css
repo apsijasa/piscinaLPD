@@ -166,7 +166,6 @@ section {
 .card-body
 {
   padding: 10px;
-
 }
 .video_swim
 {
@@ -186,10 +185,42 @@ section {
   max-width: 100%;
 }
 
+/*aca comienza pagina de cada disciplina*/
+.block-taller
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.taller-dep
+{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.taller-img
+{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.taller-img info-dep
+{
+padding-right: 20px;
+margin-top: 20px;
+max-width: 50%;
+}
 /*inscripciones online*/
 .nav-item.dropdown:hover ~ .dropdown-menu
 {
 display: block;
+}
+.formulario
+{
+  width: 50%;
 }
 .containerF
 {
@@ -215,132 +246,7 @@ display: block;
   font-weight: 500;
   letter-spacing: 0.1em;
 }
-
-
 /*noticias*/
-
-
-
-/*nosotros*/
-.accordion {
-  max-width: 800px;
-}
-.accordion .contentBx {
-  position: relative;
-  margin: 10px 20px;
-}
-.accordion .contentBx .label {
-  position: relative;
-  padding: 10px;
-  background: #2694af;
-  color: #fff;
-  cursor: pointer;
-}
-.accordion .contentBx .label::before {
-  content: '+';
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 1.5em;
-}
-.accordion .contentBx.active .label::before {
-  content: '-';
-}
-.accordion .contentBx .content {
-  position: relative;
-  background: #fff;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  overflow-y: auto;
-}
-.accordion .contentBx.active .content {
-  height: 150px;
-  padding: 10px;
-}
-
-/*formulario contacto*/
-.formulario {
-  padding: 20px;
-  height: 1150px;
-}
-.title {
-  text-align: center;
-  padding: 50px 0 20px;
-  height: 150px;
-}
-.title h1 {
-  margin: 0;
-  padding: 0;
-  color: #262626;
-  text-transform: uppercase;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 36px;
-}
-.cont_form {
-  width: 50%;
-  height: 800px;
-  background: #fff;
-  margin: 0 auto;
-  border: 2px solid #fff;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, .5);
-}
-.cont_form .left {
-  float: left;
-  width: 50%;
-  height: 400px;
-  background: url(/assests/images/leon\ LPD.jpg);
-  background-size: cover;
-  box-sizing: border-box;
-}
-.cont_form .rigth {
-  float: right;
-  width: 50%;
-  height: 100px;
-  box-sizing: border-box;
-}
-.formbox {
-  width: 100%;
-  padding: 80px 40px;
-  box-sizing: border-box;
-  height: 400px;
-  background: #fff;
-}
-.formBox p {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  color: #a6af13;
-}
-.formBox input {
-  width: 50%;
-  margin-bottom: 20px;
-}
-.formBox input[type="text"] {
-  border: none;
-  border-bottom: 2px solid #a6af13;
-  outline: none;
-  height: 40px;
-}
-.formBox input[type="text"]:focus {
-  border-bottom: 2px solid #262626;
-}
-.formBox input[type="submit"] {
-  border: none;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  background: #262626;
-  cursor: pointer;
-}
-.formBox input[type="submit"]:hover {
-  background: #1A5276;
-}
-.formBox a {
-  color: #262626;
-  font-size: 12px;
-}
 
 /* aca comienza el footer*/
 .footer {
