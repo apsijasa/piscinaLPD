@@ -23,10 +23,14 @@ header img {
 }
 .navbar,
 .container-fluid {
-  background-color: #1A5276;
+  background-color: #1A5276 !important;
   color: white;
   padding: 0;
   text-align: center;
+}
+.nav-link
+{
+  color: #fff;
 }
 .navbar-brand {
   display: flex;
@@ -141,26 +145,45 @@ section {
 }
 
 /*talleres*/
+.block_tall
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .sectionCard
 {
   padding: 20px;
   display: flex;
-
+  flex-direction: column;
+  width: 50%;
 }
-
 .taller {
   display: flex;
   gap: 10px;
 }
-
 .card-body
 {
   padding: 10px;
 
 }
-.col-md-4
+.video_swim
 {
-  
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.swim_img
+{
+  width: 50%;
+}
+.swim_img img
+{
+  padding-right: 20px;
+  margin-top: 20px;
+  max-width: 100%;
 }
 
 /*inscripciones online*/
@@ -187,6 +210,10 @@ section {
   color #fff;
   font-weight: 500;
   letter-spacing: 0.1em;
+}
+.nav-item.dropdown:hover ~ .dropdown-menu
+{
+display: block;
 }
 
 /*noticias*/
